@@ -160,20 +160,28 @@ function initScrollReveal() {
 
   const observerOptions = {
     root: null,
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -40px 0px'
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
+        entry.target.classList.add('is-visible', 'is-revealed');
         obs.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  revealElements.forEach((el) => observer.observe(el));
+  revealElements.forEach((el) => {
+    // If element is already in initial viewport, reveal immediately
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('is-visible', 'is-revealed');
+    } else {
+      observer.observe(el);
+    }
+  });
 }
 
 /* ==========================================================================
