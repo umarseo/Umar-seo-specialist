@@ -91,14 +91,15 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--glass-nav-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-glass);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 10px 30px -10px var(--shadow-color);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-nav.scrolled {
   background: var(--glass-nav-scrolled);
-  border-bottom: 1px solid rgba(16, 185, 129, 0.3);
-  box-shadow: 0 10px 35px -10px var(--shadow-color), 0 0 20px rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 12px 40px -10px var(--shadow-color), 0 0 25px rgba(16, 185, 129, 0.15);
 }
 
 .glass-card {
