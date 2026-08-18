@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -109,7 +109,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body class="bg-[#0B0F17] text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-900">
+<body class="bg-[#0B0F17] text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-900 overflow-x-hidden">
 
   <!-- ==========================================================================
        1. NAVBAR (Sticky Glass Navbar)
@@ -140,8 +140,16 @@
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="hidden md:flex items-center space-x-4">
-        <a href="tel:+916393318401" class="text-xs font-semibold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800">
+      <div class="hidden md:flex items-center space-x-3">
+        <button id="theme-toggle-btn" type="button" aria-label="Toggle Light and Dark Mode" class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/80 text-slate-300 hover:text-emerald-400 focus:outline-none transition flex items-center justify-center">
+          <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+        <a href="tel:+916393318401" class="text-xs font-semibold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-900/80 border border-slate-800">
           <span>📞</span> +91 6393318401
         </a>
         <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-slate-900 bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/20">
@@ -149,8 +157,16 @@
         </a>
       </div>
 
-      <!-- Mobile Hamburger Menu Button -->
-      <div class="md:hidden flex items-center">
+      <!-- Mobile Hamburger Menu & Theme Toggle -->
+      <div class="md:hidden flex items-center space-x-2">
+        <button id="theme-toggle-mobile" type="button" aria-label="Toggle Light and Dark Mode" class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/80 text-slate-300 hover:text-emerald-400 focus:outline-none transition flex items-center justify-center">
+          <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
         <button id="mobile-menu-btn" type="button" aria-label="Open mobile menu" class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>

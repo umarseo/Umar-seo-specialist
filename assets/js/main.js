@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('Umar Zulfqar Portfolio Initialized.');
 
   // Initialize all interactive modules
+  initThemeToggle();
   initScrollNavbar();
   initMobileMenu();
   initScrollSpy();
@@ -18,6 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   setCurrentYear();
 });
+
+/* ==========================================================================
+   0. LIGHT & DARK MODE THEME TOGGLE
+   ========================================================================== */
+function initThemeToggle() {
+  const themeToggleBtn = document.getElementById('theme-toggle-btn');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+  const htmlEl = document.documentElement;
+
+  // Retrieve saved preference or default to dark
+  const savedTheme = localStorage.getItem('portfolio-theme');
+  if (savedTheme === 'light') {
+    htmlEl.classList.remove('dark');
+  } else if (savedTheme === 'dark') {
+    htmlEl.classList.add('dark');
+  } else {
+    // Check system preference if available
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      htmlEl.classList.remove('dark');
+    } else {
+      htmlEl.classList.add('dark');
+    }
+  }
+
+  const toggleTheme = () => {
+    if (htmlEl.classList.contains('dark')) {
+      htmlEl.classList.remove('dark');
+      localStorage.setItem('portfolio-theme', 'light');
+    } else {
+      htmlEl.classList.add('dark');
+      localStorage.setItem('portfolio-theme', 'dark');
+    }
+  };
+
+  if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+  if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+}
 
 /* ==========================================================================
    1. STICKY NAVBAR ON SCROLL
@@ -66,6 +104,16 @@ function initMobileMenu() {
 
   mobileNavLinks.forEach((link) => {
     link.addEventListener('click', closeMenu);
+  });
+
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) closeMenu();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+      closeMenu();
+    }
   });
 }
 
