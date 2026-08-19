@@ -125,8 +125,8 @@
             <span class="absolute bottom-0.5 right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-slate-900 animate-pulse"></span>
           </div>
           <div>
-            <span class="font-heading font-bold text-base sm:text-lg text-slate-100 block leading-tight group-hover:text-emerald-400 transition">Umar Zulfqar</span>
-            <span class="text-[11px] text-emerald-400 font-medium tracking-wide">SEO & WordPress Dev</span>
+            <span class="font-heading font-extrabold text-base sm:text-lg text-slate-100 block leading-tight tracking-tight uppercase group-hover:text-emerald-400 transition">UMAR ZULFQAR</span>
+            <span class="text-[11px] text-emerald-400 font-bold tracking-widest uppercase block">SEO SPECIALIST</span>
           </div>
         </a>
 
@@ -1986,9 +1986,55 @@
           </div>
 
           <div class="lg:col-span-7 reveal-on-scroll">
-            <form id="contact-form" class="glass-card p-6 sm:p-8 rounded-2xl space-y-4 border border-slate-700/50">
+            <form id="contact-form" action="https://formspree.io/f/xknlqzae" method="POST" class="glass-card p-6 sm:p-8 rounded-2xl space-y-5 border border-slate-700/50 shadow-2xl relative">
+              
+              <div class="space-y-1 mb-2">
+                <h3 class="font-heading font-bold text-2xl text-white">Send an Inquiry</h3>
+                <p class="text-xs text-slate-400">Fill out the form below to request an audit, consultation, or custom website quote.</p>
+              </div>
 
-        </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name *</label>
+                  <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Email Address *</label>
+                  <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Website URL / Domain</label>
+                  <input type="url" name="website" placeholder="https://example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Service Required</label>
+                  <select name="service" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white focus:outline-none focus:border-emerald-500 transition text-sm">
+                    <option value="Technical SEO Audit">Technical SEO Audit</option>
+                    <option value="Local SEO &amp; GMB Optimization">Local SEO &amp; GMB Optimization</option>
+                    <option value="WordPress Web Development">WordPress Web Development</option>
+                    <option value="Full SEO &amp; Growth Strategy">Full SEO &amp; Growth Strategy</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Project Details / Message *</label>
+                <textarea name="message" rows="4" required placeholder="Describe your website goals, traffic targets, or technical issues..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm leading-relaxed"></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl font-bold text-slate-900 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all duration-300 shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 group text-sm">
+                <span>Send Message</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+
+              <div id="form-status" class="hidden text-center p-3 rounded-xl text-xs font-semibold"></div>
+            </form>
+          </div>
       </div>
     </section>
   </main>
@@ -2065,6 +2111,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
