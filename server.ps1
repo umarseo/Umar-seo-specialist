@@ -28,9 +28,17 @@ try {
         $response = $context.Response
 
         $urlPath = $request.Url.LocalPath
-        if ($urlPath -eq "/") { $urlPath = "/index.html" }
+        if ($urlPath -eq "/") {
+            $urlPath = "/index.html"
+        } elseif ($urlPath -eq "/clients" -or $urlPath -eq "/clients/") {
+            $urlPath = "/clients.html"
+        }
 
         $filePath = Join-Path $rootDir ($urlPath.TrimStart('/').Replace('/', '\'))
+
+        if (-not (Test-Path $filePath -PathType Leaf) -and (Test-Path "$filePath.html" -PathType Leaf)) {
+            $filePath = "$filePath.html"
+        }
 
         if (Test-Path $filePath -PathType Leaf) {
             $ext = [System.IO.Path]::GetExtension($filePath).ToLower()

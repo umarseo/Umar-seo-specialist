@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initProgressBars();
   initCounters();
   initProjectFiltering();
+  initClientShowcaseFiltering();
   initProjectModals();
+  initSeoDashboard();
+  initTestimonials();
   initContactForm();
   setCurrentYear();
 });
@@ -174,7 +177,6 @@ function initScrollReveal() {
   }, observerOptions);
 
   revealElements.forEach((el) => {
-    // If element is already in initial viewport, reveal immediately
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight) {
       el.classList.add('is-visible', 'is-revealed');
@@ -249,7 +251,7 @@ function initCounters() {
 }
 
 /* ==========================================================================
-   7. DOMESTIC & INTERNATIONAL PROJECT CATEGORY FILTERING
+   7. PROJECT CATEGORY FILTERING
    ========================================================================== */
 function initProjectFiltering() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -292,7 +294,69 @@ function initProjectFiltering() {
 }
 
 /* ==========================================================================
-   8. PROJECT CASE STUDY MODAL OVERLAY DATA & CONTROLS
+   7.1 DEDICATED CLIENTS SHOWCASE CATEGORY FILTERING & LIVE SEARCH
+   ========================================================================== */
+function initClientShowcaseFiltering() {
+  const categoryBtns = document.querySelectorAll('.category-filter-btn');
+  const clientCards = document.querySelectorAll('.client-card');
+  const searchInput = document.getElementById('client-search-input');
+
+  if (!categoryBtns.length || !clientCards.length) return;
+
+  let currentCategory = 'all';
+  let searchQuery = '';
+
+  const filterCards = () => {
+    clientCards.forEach((card) => {
+      const cardCategory = card.getAttribute('data-category');
+      const cardName = (card.getAttribute('data-name') || '').toLowerCase();
+      const cardDomain = (card.getAttribute('data-domain') || '').toLowerCase();
+
+      const matchesCategory = (currentCategory === 'all' || cardCategory === currentCategory);
+      const matchesSearch = !searchQuery || cardName.includes(searchQuery) || cardDomain.includes(searchQuery);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 50);
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          card.style.display = 'none';
+        }, 300);
+      }
+    });
+  };
+
+  categoryBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      currentCategory = btn.getAttribute('data-category');
+
+      categoryBtns.forEach((b) => {
+        b.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40', 'shadow-lg', 'shadow-emerald-500/10');
+        b.classList.add('bg-slate-800/60', 'text-slate-400', 'border-white/5');
+      });
+
+      btn.classList.remove('bg-slate-800/60', 'text-slate-400', 'border-white/5');
+      btn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40', 'shadow-lg', 'shadow-emerald-500/10');
+
+      filterCards();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterCards();
+    });
+  }
+}
+
+/* ==========================================================================
+   8. PROJECT CASE STUDY MODAL OVERLAY
    ========================================================================== */
 const projectData = {
   // INTERNATIONAL PROJECTS (DUBAI, UAE & GLOBAL)
@@ -741,7 +805,76 @@ function initProjectModals() {
 }
 
 /* ==========================================================================
-   9. CONTACT FORM VALIDATION & TOAST NOTIFICATION
+   9. INTERACTIVE SEO DASHBOARD CHART CONTROLS
+   ========================================================================== */
+function initSeoDashboard() {
+  const chartBtns = document.querySelectorAll('.dash-time-btn');
+  const metricVal = document.getElementById('dash-metric-val');
+  const metricGrowth = document.getElementById('dash-metric-growth');
+
+  if (!chartBtns.length) return;
+
+  const metricData = {
+    '7d': { val: '14.2K', growth: '+18.4% vs prev week' },
+    '30d': { val: '58.4K', growth: '+42.8% vs prev month' },
+    '90d': { val: '184.9K', growth: '+124.5% vs prev quarter' }
+  };
+
+  chartBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      chartBtns.forEach((b) => {
+        b.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/30');
+        b.classList.add('text-slate-400', 'border-transparent');
+      });
+      btn.classList.remove('text-slate-400', 'border-transparent');
+      btn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/30');
+
+      const period = btn.getAttribute('data-period');
+      if (metricData[period]) {
+        if (metricVal) metricVal.textContent = metricData[period].val;
+        if (metricGrowth) metricGrowth.textContent = metricData[period].growth;
+      }
+    });
+  });
+}
+
+/* ==========================================================================
+   10. TESTIMONIALS CAROUSEL
+   ========================================================================== */
+function initTestimonials() {
+  const prevBtn = document.getElementById('testi-prev');
+  const nextBtn = document.getElementById('testi-next');
+  const cards = document.querySelectorAll('.testimonial-card');
+
+  if (!cards.length || !prevBtn || !nextBtn) return;
+
+  let currentIndex = 0;
+
+  const showTestimonial = (index) => {
+    cards.forEach((card, idx) => {
+      if (idx === index) {
+        card.classList.remove('hidden');
+        card.classList.add('block');
+      } else {
+        card.classList.add('hidden');
+        card.classList.remove('block');
+      }
+    });
+  };
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showTestimonial(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showTestimonial(currentIndex);
+  });
+}
+
+/* ==========================================================================
+   11. CONTACT FORM VALIDATION & TOAST NOTIFICATION
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -816,7 +949,7 @@ function initContactForm() {
 }
 
 /* ==========================================================================
-   10. SET CURRENT YEAR IN FOOTER
+   12. SET CURRENT YEAR IN FOOTER
    ========================================================================== */
 function setCurrentYear() {
   const yearEl = document.getElementById('current-year');
