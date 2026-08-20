@@ -371,6 +371,90 @@ html:not(.dark) .cyber-badge {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
+  input, select, textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS Safari */
+  }
+}
+
+/* ==========================================================================
+   FLOATING BOTTOM NAVIGATION BAR (iOS App Style)
+   ========================================================================== */
+.bottom-nav-bar {
+  position: fixed;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  left: 1rem;
+  right: 1rem;
+  z-index: 50;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+  padding: 0.35rem 0.5rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(16, 185, 129, 0.15);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+html:not(.dark) .bottom-nav-bar {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.12), 0 0 20px rgba(16, 185, 129, 0.12);
+}
+
+.bottom-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.55rem;
+  border-radius: 9999px;
+  color: #94A3B8;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1;
+  gap: 0.25rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 44px;
+}
+
+.bottom-nav-link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+.bottom-nav-link.active,
+.bottom-nav-link:hover {
+  color: #10B981 !important;
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.bottom-nav-link.active svg {
+  transform: translateY(-1px) scale(1.1);
+  color: #10B981 !important;
+}
+
+html:not(.dark) .bottom-nav-link {
+  color: #64748B;
+}
+
+html:not(.dark) .bottom-nav-link.active {
+  color: #047857 !important;
+  background: rgba(16, 185, 129, 0.18);
+}
+
+/* Safe area padding helper for content container */
+.has-bottom-nav {
+  padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+@media (min-width: 1024px) {
+  .has-bottom-nav {
+    padding-bottom: 0 !important;
+  }
 }
 
 /* Responsive & Reduced Motion */
@@ -389,3 +473,4 @@ html:not(.dark) .cyber-badge {
     opacity: 1 !important;
   }
 }
+
