@@ -1228,23 +1228,25 @@
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name *</label>
-                  <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                  <label for="name" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name *</label>
+                  <input type="text" name="name" id="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                  <span id="name-error" class="error-msg text-red-400 text-xs mt-1 hidden"></span>
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Email Address *</label>
-                  <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                  <label for="email" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Email Address *</label>
+                  <input type="email" name="email" id="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                  <span id="email-error" class="error-msg text-red-400 text-xs mt-1 hidden"></span>
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Website URL / Domain</label>
-                  <input type="url" name="website" placeholder="https://example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
+                  <label for="website" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Website URL / Domain</label>
+                  <input type="url" name="website" id="website" placeholder="https://example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm" />
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Service Required</label>
-                  <select name="service" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white focus:outline-none focus:border-emerald-500 transition text-sm">
+                  <label for="service" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Service Required</label>
+                  <select name="service" id="service" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white focus:outline-none focus:border-emerald-500 transition text-sm">
                     <option value="Technical SEO Audit">Technical SEO Audit</option>
                     <option value="Local SEO &amp; GMB Optimization">Local SEO &amp; GMB Optimization</option>
                     <option value="AEO &amp; GEO AI Search Optimization">AEO &amp; GEO AI Search Optimization</option>
@@ -1255,8 +1257,9 @@
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Project Details / Message *</label>
-                <textarea name="message" rows="4" required placeholder="Describe your website goals, traffic targets, or technical issues..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm leading-relaxed"></textarea>
+                <label for="message" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Project Details / Message *</label>
+                <textarea name="message" id="message" rows="4" required placeholder="Describe your website goals, traffic targets, or technical issues..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition text-sm leading-relaxed"></textarea>
+                <span id="message-error" class="error-msg text-red-400 text-xs mt-1 hidden"></span>
               </div>
 
               <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl font-bold text-slate-900 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all duration-300 shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 group text-sm">
@@ -1266,7 +1269,7 @@
                 </svg>
               </button>
 
-              <div id="form-status" class="hidden text-center p-3 rounded-xl text-xs font-semibold"></div>
+              <div id="form-status" class="hidden text-center p-3.5 rounded-xl text-xs font-bold transition-all"></div>
             </form>
           </div>
       </div>

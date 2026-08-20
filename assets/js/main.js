@@ -878,7 +878,8 @@ function initTestimonials() {
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
-  const toast = document.getElementById('contact-toast');
+  const submitBtn = document.getElementById('submit-btn');
+  const statusDiv = document.getElementById('form-status');
 
   if (!form) return;
 
@@ -895,8 +896,8 @@ function initContactForm() {
   };
 
   const clearErrors = () => {
-    const errorMsgs = document.querySelectorAll('.error-msg');
-    const inputs = form.querySelectorAll('input, textarea');
+    const errorMsgs = form.querySelectorAll('.error-msg');
+    const inputs = form.querySelectorAll('input, select, textarea');
     errorMsgs.forEach((el) => {
       el.textContent = '';
       el.classList.add('hidden');
@@ -904,15 +905,23 @@ function initContactForm() {
     inputs.forEach((el) => {
       el.classList.remove('border-red-500');
     });
+    if (statusDiv) {
+      statusDiv.className = 'hidden text-center p-3.5 rounded-xl text-xs font-bold transition-all';
+      statusDiv.textContent = '';
+    }
   };
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     clearErrors();
 
-    const name = document.getElementById('name')?.value.trim();
-    const email = document.getElementById('email')?.value.trim();
-    const message = document.getElementById('message')?.value.trim();
+    const nameInput = form.querySelector('[name="name"]');
+    const emailInput = form.querySelector('[name="email"]');
+    const messageInput = form.querySelector('[name="message"]');
+
+    const name = nameInput?.value.trim();
+    const email = emailInput?.value.trim();
+    const message = messageInput?.value.trim();
 
     let isValid = true;
 
@@ -934,16 +943,44 @@ function initContactForm() {
       isValid = false;
     }
 
-    if (isValid) {
-      if (toast) {
-        toast.classList.remove('hidden');
-        toast.classList.add('flex');
-        setTimeout(() => {
-          toast.classList.add('hidden');
-          toast.classList.remove('flex');
-        }, 6000);
+    if (!isValid) return;
+
+    // Show loading UI on button
+    const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending Inquiry...</span>';
+    }
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        if (statusDiv) {
+          statusDiv.className = 'block text-center p-3.5 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-lg';
+          statusDiv.innerHTML = '✅ Inquiry Sent Successfully! Umar will get back to you shortly.';
+        }
+        form.reset();
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Submission failed');
       }
-      form.reset();
+    } catch (err) {
+      console.warn('Formspree fetch failed, submitting directly:', err);
+      // Fallback: direct form submission
+      form.submit();
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      }
     }
   });
 }
