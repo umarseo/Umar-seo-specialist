@@ -54,7 +54,25 @@ function initThemeToggle() {
       htmlEl.classList.add('dark');
       localStorage.setItem('portfolio-theme', 'dark');
     }
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
   if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
@@ -73,7 +91,25 @@ function initScrollNavbar() {
     } else {
       navbar.classList.remove('scrolled');
     }
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll(); // Initial check
@@ -94,13 +130,49 @@ function initMobileMenu() {
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('flex');
     document.body.style.overflow = 'hidden';
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const closeMenu = () => {
     mobileMenu.classList.add('hidden');
     mobileMenu.classList.remove('flex');
     document.body.style.overflow = '';
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   mobileMenuBtn.addEventListener('click', openMenu);
   if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
@@ -133,7 +205,25 @@ function initScrollSpy() {
     root: null,
     rootMargin: '-20% 0px -60% 0px',
     threshold: 0
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -165,7 +255,25 @@ function initScrollReveal() {
     root: null,
     threshold: 0.05,
     rootMargin: '0px 0px -40px 0px'
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
@@ -196,7 +304,25 @@ function initProgressBars() {
   const observerOptions = {
     root: null,
     threshold: 0.2
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
@@ -221,7 +347,25 @@ function initCounters() {
   const observerOptions = {
     root: null,
     threshold: 0.5
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
@@ -329,7 +473,25 @@ function initClientShowcaseFiltering() {
         }, 300);
       }
     });
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   categoryBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -1277,6 +1439,24 @@ const projectData = {
     approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
     tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   }
+,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
 };
 
 function initProjectModals() {
@@ -1315,12 +1495,48 @@ function initProjectModals() {
 
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const closeModal = () => {
     modal.classList.remove('is-open');
     document.body.style.overflow = '';
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   viewBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -1357,7 +1573,25 @@ function initSeoDashboard() {
     '7d': { val: '14.2K', growth: '+18.4% vs prev week' },
     '30d': { val: '58.4K', growth: '+42.8% vs prev month' },
     '90d': { val: '184.9K', growth: '+124.5% vs prev quarter' }
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   chartBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -1399,7 +1633,25 @@ function initTestimonials() {
         card.classList.remove('block');
       }
     });
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
@@ -1432,7 +1684,25 @@ function initContactForm() {
     if (inputEl) {
       inputEl.classList.add('border-red-500');
     }
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   const clearErrors = () => {
     const errorMsgs = form.querySelectorAll('.error-msg');
@@ -1448,7 +1718,25 @@ function initContactForm() {
       statusDiv.className = 'hidden text-center p-3.5 rounded-xl text-xs font-bold transition-all';
       statusDiv.textContent = '';
     }
-  };
+  ,
+  "mukhtalif": {
+    title: "Mukhtalif Shop",
+    url: "https://www.mukhtalif.shop/",
+    industry: "E-Commerce / Fashion & Retail",
+    location: "UAE & Middle East",
+    market: "International SEO (E-Commerce)",
+    focus: "E-Commerce SEO | Category Keyword Indexing | Product Schema | Technical SEO",
+    summary: "Online e-commerce fashion and retail store offering custom apparel, lifestyle merchandise, and regional retail products.",
+    activities: [
+      "E-commerce product & category keyword research",
+      "Technical indexing & Core Web Vitals optimization",
+      "Product Schema & Merchant Center SEO alignment",
+      "High-conversion search intent optimization"
+    ],
+    approach: "E-commerce SEO strategy targeting product categories, structured product data deployment, and organic search shopping visibility.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  }
+};
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -1549,6 +1837,7 @@ function setCurrentYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
 
 
 
