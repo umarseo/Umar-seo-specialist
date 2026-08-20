@@ -246,9 +246,15 @@
           
           <!-- Left Hero Content -->
           <div class="lg:col-span-7 space-y-8 reveal-on-scroll">
-            <div class="cyber-badge">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-              SEO SPECIALIST &middot; 3+ YEARS EXPERIENCE
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="cyber-badge">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                SEO SPECIALIST &middot; 3+ YEARS EXPERIENCE
+              </div>
+              <div class="px-3.5 py-1 rounded-full bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold font-heading tracking-wide shadow-lg shadow-emerald-500/10 flex items-center gap-1.5">
+                <span>🚀</span>
+                <span>&ldquo;Try once, rank always&rdquo;</span>
+              </div>
             </div>
 
             <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.15]">
@@ -303,63 +309,43 @@
 
           </div>
 
-          <!-- Right Hero Visual Dashboard -->
+          <!-- Right Hero Visual Dashboard & Profile -->
           <div class="lg:col-span-5 relative reveal-on-scroll">
             <div class="relative mx-auto max-w-md lg:max-w-none">
-              <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 blur-xl opacity-75 animate-pulse-glow"></div>
-              <div class="relative rounded-2xl overflow-hidden glass-card p-4 border border-slate-700/50 shadow-2xl space-y-4">
-                
-                <!-- Mock Header -->
-                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                  <div class="flex items-center gap-2">
-                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-                    <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-                    <span class="text-xs font-mono-tech text-slate-400 ml-2">seo-growth-analytics.live</span>
+              <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-emerald-500/30 to-cyan-500/30 blur-2xl opacity-75 animate-pulse-glow"></div>
+              
+              <div class="relative rounded-3xl overflow-hidden glass-card p-3 border border-slate-700/60 shadow-2xl space-y-4">
+                <!-- User Photo -->
+                <div class="relative rounded-2xl overflow-hidden h-[380px] sm:h-[420px]">
+                  <img src="assets/images/umar-zulfqar-hero.jpg" alt="Umar Zulfqar - SEO Specialist" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                  
+                  <!-- Floating Badge 1: Try Once, Rank Always -->
+                  <div class="absolute top-4 left-4 glass-nav px-3.5 py-1.5 rounded-full border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-2 shadow-xl backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Try Once, Rank Always</span>
                   </div>
-                  <span class="text-[10px] font-mono-tech text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">LIVE METRICS</span>
-                </div>
 
-                <!-- Traffic Graph Area -->
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between text-xs">
-                    <span class="text-slate-400">Organic Traffic Growth</span>
-                    <span class="text-emerald-400 font-semibold">+248.5%</span>
-                  </div>
-                  <div class="h-28 w-full bg-slate-900/60 rounded-xl p-2 relative flex items-end">
-                    <!-- Dynamic Wave SVG -->
-                    <svg class="w-full h-full text-emerald-500" viewBox="0 0 300 100" fill="none" preserveAspectRatio="none">
-                      <path d="M0,80 Q50,60 100,65 T200,30 T300,10 L300,100 L0,100 Z" fill="url(#hero-gradient)" opacity="0.3" />
-                      <path d="M0,80 Q50,60 100,65 T200,30 T300,10" stroke="#10B981" stroke-width="3" fill="none" />
-                      <defs>
-                        <linearGradient id="hero-gradient" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stop-color="#10B981" />
-                          <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                </div>
-
-                <!-- Quick Metric Badges -->
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
-                    <div>
-                      <div class="text-[10px] text-slate-400">Top 3 Keywords</div>
-                      <div class="text-sm font-bold text-slate-100">142 Terms</div>
+                  <!-- Floating Badge 2: Organic Traffic Growth -->
+                  <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-nav border border-white/10 backdrop-blur-xl space-y-2">
+                    <div class="flex items-center justify-between text-xs">
+                      <span class="text-slate-300 font-semibold">Organic Traffic Growth</span>
+                      <span class="text-emerald-400 font-bold">+248.5%</span>
                     </div>
-                    <span class="text-xs text-emerald-400 font-bold">#1 Peak</span>
-                  </div>
-                  <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
-                    <div>
-                      <div class="text-[10px] text-slate-400">Avg CTR</div>
-                      <div class="text-sm font-bold text-slate-100">5.8%</div>
+                    <div class="grid grid-cols-2 gap-2 text-center text-[11px] pt-1">
+                      <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div class="text-emerald-400 font-bold">142 Terms</div>
+                        <div class="text-[10px] text-slate-400">Top 3 Keywords</div>
+                      </div>
+                      <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div class="text-cyan-400 font-bold">5,000+</div>
+                        <div class="text-[10px] text-slate-400">Keywords Ranked</div>
+                      </div>
                     </div>
-                    <span class="text-xs text-cyan-400 font-bold">High Intent</span>
                   </div>
                 </div>
-
               </div>
+
             </div>
           </div>
 
