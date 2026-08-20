@@ -296,12 +296,17 @@ html:not(.dark) .cyber-badge {
   visibility: hidden;
 }
 
-/* Scroll Reveal States */
+/* Scroll Reveal States with Fail-Safe Visibility */
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
+}
+
+html.js-ready .reveal-on-scroll:not(.is-visible):not(.is-revealed) {
+  opacity: 0;
+  transform: translateY(28px);
 }
 
 .reveal-on-scroll.is-visible,
