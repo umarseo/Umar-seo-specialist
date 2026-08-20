@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Main JavaScript File for Umar Zulfqar Portfolio
  * SEO Specialist | Data-Driven Growth Strategist | WordPress & Web Developer
  */
@@ -359,140 +359,923 @@ function initClientShowcaseFiltering() {
    8. PROJECT CASE STUDY MODAL OVERLAY
    ========================================================================== */
 const projectData = {
-  binod: {
-    title: 'Binod Group',
-    url: 'https://binodgroup.com/',
-    industry: 'Automotive / Automobile',
-    location: 'Guwahati, Assam, India',
-    market: 'Domestic SEO (India)',
-    focus: 'Automotive SEO | Local SEO | Commercial Keyword Targeting | Content SEO',
-    summary: 'A long-established automotive group serving Northeast India through vehicle sales, servicing, spare parts and authorized automotive partnerships.',
+  "binod": {
+    title: "Binod Group",
+    url: "https://binodgroup.com/",
+    industry: "Automotive / Dealership",
+    location: "Assam, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "A long-established automotive group serving Northeast India through vehicle sales, servicing, spare parts and authorized automotive partnerships.",
     activities: [
-      'Automotive keyword research',
-      'Location-based targeting',
-      'Service-page optimization',
-      'Dealership SEO support',
-      'Content optimization',
-      'Local search strategy'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Targeted location-based automotive search queries, brand search visibility, dealership service pages and local search relevance.',
-    tools: ['Google Search Console', 'Google Business Profile', 'Ahrefs', 'GA4']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  booktutor: {
-    title: 'BookTutor',
-    url: 'https://booktutor.in/',
-    industry: 'EdTech / Home & Online Tutor Booking',
-    location: 'India',
-    market: 'Domestic SEO (India)',
-    focus: 'EdTech SEO | Tutor Booking Keywords | Technical SEO | WordPress',
-    summary: 'A leading educational platform in India connecting students with verified home and online tutors across academic subjects.',
+  "booktutor": {
+    title: "BookTutor",
+    url: "https://booktutor.in/",
+    industry: "EdTech / Tutor Booking",
+    location: "India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "A leading educational platform in India connecting students with verified home and online tutors across academic subjects.",
     activities: [
-      'EdTech & subject-wise tutor keyword clustering',
-      'Local city-based tutor landing page SEO',
-      'WordPress speed optimization & FAQ Schema'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Targeted high-intent searches for home tutors in Indian cities with structured landing pages.',
-    tools: ['Google Search Console', 'WordPress', 'SEMrush', 'GA4']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  sahinternational: {
-    title: 'SAH International',
-    url: 'https://sahinternational.org/',
-    industry: 'NGO / Educational & Social Foundation',
-    location: 'India',
-    market: 'Domestic SEO (India)',
-    focus: 'Non-Profit SEO | Educational Outreach | WordPress Development',
-    summary: 'International educational and social foundation working towards accessible education, skill development, and community welfare.',
+  "sahinternational": {
+    title: "SAH International",
+    url: "https://sahinternational.org/",
+    industry: "Educational & Social NGO",
+    location: "India & Global",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "International educational and social foundation working towards accessible education, skill development, and community welfare.",
     activities: [
-      'NGO brand visibility & cause-based keyword research',
-      'WordPress portal development & mobile usability',
-      'Content architecture & non-profit Schema'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Optimized brand search authority, program pages, and community impact content.',
-    tools: ['Google Search Console', 'WordPress', 'Ahrefs']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  dispur: {
-    title: 'Dispur Polyclinic & Hospitals',
-    url: 'https://dispurpolyclinichospitals.com/',
-    industry: 'Healthcare / Hospital',
-    location: 'Guwahati, Assam, India',
-    market: 'Domestic SEO (India)',
-    focus: 'Healthcare SEO | Local SEO | Content Optimization | Technical SEO',
-    summary: 'An established healthcare and hospital website serving patients in Guwahati, with a strong focus on improving online visibility for hospital services.',
+  "dispur": {
+    title: "Dispur Polyclinic & Hospitals",
+    url: "https://dispurpolyclinichospitals.com/",
+    industry: "Healthcare / Hospital",
+    location: "Assam, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "An established healthcare and hospital website serving patients in Guwahati, with a strong focus on improving online visibility.",
     activities: [
-      'Healthcare keyword research',
-      'Local SEO optimization',
-      'Service-page optimization',
-      'On-page SEO & content structure'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Focused on technical website health, keyword targeting, service-page visibility and local search relevance.',
-    tools: ['Google Search Console', 'Google Business Profile', 'Screaming Frog', 'GA4']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  duha: {
-    title: 'DUHA Industries',
-    url: 'https://duhaindustries.com/',
-    industry: 'Plastic Products / Manufacturing',
-    location: 'Guwahati, Assam, India',
-    market: 'Domestic SEO (India)',
-    focus: 'Product SEO | E-commerce SEO | Search-Intent | On-Page Optimization',
-    summary: 'A product-focused manufacturing website offering plastic furniture and household products under the DUHA brand.',
+  "duha": {
+    title: "DUHA Industries",
+    url: "https://duhaindustries.com/",
+    industry: "Plastic Products / Manufacturing",
+    location: "Assam, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "A product-focused manufacturing website offering plastic furniture and household products under the DUHA brand.",
     activities: [
-      'Product-focused keyword research',
-      'Category page optimization',
-      'E-commerce indexing optimization',
-      'Internal link structure'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Product and category page optimization, technical indexing control, internal link structure and search-intent alignment.',
-    tools: ['Google Search Console', 'Ahrefs', 'Screaming Frog']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  prabha: {
-    title: 'Prabha Power',
-    url: 'https://prabhapower.com/',
-    industry: 'Electrical / Power Infrastructure',
-    location: 'Guwahati, Assam, India',
-    market: 'Domestic SEO (India)',
-    focus: 'B2B SEO | Industrial Product SEO | Technical Content Optimization',
-    summary: 'An electrical solutions and products business serving transmission and distribution projects, utilities, railways and public infrastructure.',
+  "prabha": {
+    title: "Prabha Power",
+    url: "https://prabhapower.com/",
+    industry: "Power Infrastructure",
+    location: "Assam, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "An electrical solutions and products business serving transmission and distribution projects, utilities, and railways.",
     activities: [
-      'Industrial product keyword research',
-      'B2B search-intent mapping',
-      'Product & service page SEO',
-      'Technical content structure'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Industrial product keyword research, B2B search-intent mapping, product/service page optimization and technical content structure.',
-    tools: ['Google Search Console', 'SEMrush', 'GA4']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  uncodemy: {
-    title: 'Uncodemy',
-    url: 'https://uncodemy.com/',
-    industry: 'Education / IT Training',
-    location: 'Noida & India',
-    market: 'Domestic SEO (India)',
-    focus: 'Education SEO | Course Landing Pages | Competitor Benchmarking',
-    summary: 'An education and technology training project focused on improving search visibility for IT courses, programming training and education searches.',
+  "uncodemy": {
+    title: "Uncodemy",
+    url: "https://uncodemy.com/",
+    industry: "Education / IT Training",
+    location: "Noida, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "An education and technology training project focused on improving search visibility for IT courses and programming training.",
     activities: [
-      'Education keyword research',
-      'Course-page SEO',
-      'Local SEO support',
-      'Competitor gap analysis'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Education keyword research, course page optimization, local SEO support, competitor gap analysis and internal linking.',
-    tools: ['Google Search Console', 'Ahrefs', 'SEMrush', 'GA4']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   },
-  krishnaurja: {
-    title: 'Krishna Urja Constructions',
-    url: 'https://krishnaurja.in/',
-    industry: 'EPC / Power Transmission',
-    location: 'Guwahati, Assam, India',
-    market: 'Domestic SEO (India)',
-    focus: 'EHV Transmission | B2B EPC SEO | Technical Content Strategy',
-    summary: 'A specialized EPC company focused on high-voltage and extra-high-voltage transmission infrastructure in Northeast India.',
+  "krishnaurja": {
+    title: "Krishna Urja Constructions",
+    url: "https://krishnaurja.in/",
+    industry: "EPC / Power Transmission",
+    location: "Assam, India",
+    market: "Domestic SEO (India)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "A specialized EPC company focused on high-voltage and extra-high-voltage transmission infrastructure in Northeast India.",
     activities: [
-      'Industrial & EHV transmission keyword research',
-      'Service-page & technical content optimization',
-      'Location-based EPC B2B keyword strategy'
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
     ],
-    approach: 'Industrial keyword research, technical service page optimization, local B2B keyword targeting and structural content alignment.',
-    tools: ['Google Search Console', 'GA4', 'Screaming Frog']
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "egresswindow": {
+    title: "Egress Window Coverings",
+    url: "http://egresswindowcoverings.com",
+    industry: "Home & Window Solutions",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom egress window cover manufacturing and residential window protection solutions.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "joyfulcreations": {
+    title: "Joyful Creations Studio",
+    url: "http://joyfulcreationsstudio.com",
+    industry: "Creative Design Studio",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Artisan craft studio specializing in custom artwork, creative workshops, and handmade design.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "vinylwindow": {
+    title: "Vinyl Window Solutions AL",
+    url: "http://vinylwindowsolutionsal.com",
+    industry: "Window Contracting & Replacement",
+    location: "Alabama, USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Residential vinyl window installation, energy-efficient replacements, and local contracting.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "convergenceprop": {
+    title: "Convergence Properties",
+    url: "https://convergenceproperties.net/",
+    industry: "Real Estate & Property Management",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Commercial and residential real estate investment, leasing, and property asset management.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "better2gether": {
+    title: "Better 2Gether",
+    url: "http://better2gether.org",
+    industry: "Non-Profit & Community Foundation",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Non-profit organization dedicated to supporting families and children with complex medical needs.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "thorneridge": {
+    title: "Thorne Ridge",
+    url: "http://thorneridge.com",
+    industry: "Hospitality & Event Venue",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Scenic event estate, wedding venue hosting, and luxury lodging accommodations.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "neustart": {
+    title: "Neustart Psychiatry",
+    url: "https://neustartpsychiatry.com/",
+    industry: "Psychiatry & Behavioral Health",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Comprehensive psychiatric evaluation, medication management, and mental wellness care.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "restrooms505": {
+    title: "505 Restrooms",
+    url: "http://www.505restrooms.com",
+    industry: "Commercial Sanitation & Facilities",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Portable restroom rentals, luxury restroom trailers, and commercial event sanitation.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "paulwiener": {
+    title: "Paul Wiener Physical Therapy",
+    url: "https://paulwienerphysicaltherapy.com/",
+    industry: "Physical Therapy & Rehab",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Outpatient physical therapy clinic specializing in orthopedic rehabilitation and sports medicine.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "sweetpea": {
+    title: "Sweetpea Midwifery",
+    url: "https://sweetpeamidwifery.com/",
+    industry: "Midwifery & Maternal Care",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Personalized midwifery, prenatal care, home birth support, and postpartum wellness.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "cardioloft": {
+    title: "Cardioloft",
+    url: "https://www.cardioloft.com/en/",
+    industry: "Cardiology & Cardiovascular Care",
+    location: "Global",
+    market: "International SEO (Global)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Advanced cardiovascular diagnostic clinic and preventative heart care center.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "scales247": {
+    title: "24/7 Scales",
+    url: "https://www.247scales.com/",
+    industry: "Industrial Scale Systems",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Commercial weighing equipment, heavy-duty truck scales, calibration, and 24/7 technical repair.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "brookside": {
+    title: "Brookside Counseling",
+    url: "https://www.brooksidecounseling.com/",
+    industry: "Mental Health & Counseling",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Licensed therapy practice providing individual counseling, family therapy, and stress management.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "heartconnect": {
+    title: "HeartConnect Coaching",
+    url: "http://heartconnectcoaching.com/",
+    industry: "Life & Executive Coaching",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Transformational relationship coaching, executive performance guidance, and mindfulness.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "houstongolf": {
+    title: "Houston Golf Lesson",
+    url: "https://houstongolflesson.com/",
+    industry: "Sports & Golf Instruction",
+    location: "Texas, USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Professional golf coaching, swing video analysis, and junior golf academy in Houston.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "adrclaims": {
+    title: "ADR Claims",
+    url: "https://adr-claims.com/",
+    industry: "Insurance & Legal Claim Resolution",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Public insurance adjusters and dispute resolution specialists for property damage claims.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "sistaffing": {
+    title: "SI Staffing",
+    url: "http://www.sistaffing.com",
+    industry: "Staffing & Recruitment Agency",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Light industrial, commercial, medical, and administrative temporary staffing solutions.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "riverrose": {
+    title: "River Rose Medical Services",
+    url: "http://riverrosems.com",
+    industry: "Medical & Clinical Services",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Specialized clinical healthcare consulting, diagnostic support, and patient care management.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "generalnet": {
+    title: "General Network",
+    url: "http://mygeneralnetwork.com",
+    industry: "IT & Network Infrastructure",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Managed IT services, structured cabling, cybersecurity, and enterprise cloud networking.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "stardesignes": {
+    title: "Star Designes",
+    url: "http://stardesignes.com",
+    industry: "Graphic & Digital Design",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom branding, web graphics, digital marketing artwork, and promotional design.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "touchofparadise": {
+    title: "Touch of Paradise",
+    url: "http://touch-of-paradise.com",
+    industry: "Landscaping & Outdoor Living",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom landscape design, hardscaping, outdoor lighting, and lawn maintenance.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "poolandspa": {
+    title: "Pool and Spa Florida",
+    url: "http://poolandspaflorida.com",
+    industry: "Pool Construction & Maintenance",
+    location: "Florida, USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom swimming pool building, spa installations, equipment upgrades, and weekly service.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "maidomatic": {
+    title: "Maid-O-Matic",
+    url: "https://maid-o-matic.com/",
+    industry: "Residential & Office Cleaning",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Professional house cleaning, deep maid services, and commercial janitorial maintenance.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "setcolor24": {
+    title: "SetColor24",
+    url: "https://www.setcolor24.com/",
+    industry: "Printing & Color Graphics",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "High-volume commercial printing, wide-format banners, and custom color signage.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "sourcemomentum": {
+    title: "Source Momentum Healthcare",
+    url: "http://sourcemomentumhealthcare.com",
+    industry: "Healthcare & Nurse Staffing",
+    location: "Canada & USA",
+    market: "International SEO",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Nursing agency, home healthcare assistance, and medical staffing solutions.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "cracovia": {
+    title: "Cracovia",
+    url: "http://cracovia.com",
+    industry: "Culinary & Hospitality Venue",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Traditional Polish restaurant, banquet event hosting, and European catering.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "edenpress": {
+    title: "Eden Press",
+    url: "http://www.edenpress.com",
+    industry: "Publishing & Specialty Printing",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Independent book publishing, custom print fulfillment, and specialized literature.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "setmotorsports": {
+    title: "SET Motorsports",
+    url: "http://setmotorsports.com",
+    industry: "Automotive & Motorsports",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Performance automotive tuning, race car preparation, and aftermarket performance parts.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "nativemodular": {
+    title: "Native Modular",
+    url: "http://nativemodular.com",
+    industry: "Modular Construction & Architecture",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Prefabricated modular home construction, sustainable architectural design, and building.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "waypointmro": {
+    title: "Waypoint MRO",
+    url: "http://waypointmro.com",
+    industry: "Aviation Maintenance & MRO",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Aircraft maintenance, repair, overhaul, avionics inspections, and aviation logistics.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "uffer": {
+    title: "UFFER Foundation",
+    url: "http://uffer.org",
+    industry: "Social Welfare & Non-Profit",
+    location: "Global",
+    market: "International SEO (Global)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Humanitarian relief foundation promoting community development and educational aid.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "ssapdr": {
+    title: "SSA Dent Repair",
+    url: "http://ssapdr.com",
+    industry: "Paintless Dent Repair & Auto Body",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Mobile paintless dent removal, hail damage repair, and automotive finish restoration.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "sailaweigh": {
+    title: "Sail Aweigh",
+    url: "http://sailaweigh.org",
+    industry: "Marine & Boating Non-Profit",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Nautical education foundation providing therapeutic sailing programs and marine awareness.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "richardpitts": {
+    title: "Richard Pitts Consulting",
+    url: "http://richardpitts.com",
+    industry: "Professional Consulting",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Executive advisory, business strategy consulting, and professional leadership mentoring.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "ritakumari": {
+    title: "Rita Kumari Interior Design",
+    url: "http://ritakumariinteriordesign.com",
+    industry: "Interior Design & Architecture",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Luxury residential interior design, spatial planning, furniture selection, and styling.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "ottostrophies": {
+    title: "Ottos Trophies",
+    url: "http://ottostrophies.com",
+    industry: "Custom Awards & Trophies",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom laser-engraved trophies, athletic awards, corporate plaques, and recognition gifts.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "odinsorganics": {
+    title: "Odins Organics",
+    url: "http://odinsorganics.com",
+    industry: "Organic Products & Wellness",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "All-natural organic wellness formulas, herbal supplements, and eco-friendly products.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "harlandhomes": {
+    title: "Harland Homes Design",
+    url: "http://harlandhomesdesign.com",
+    industry: "Residential Architecture & Build",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Custom home design blueprints, residential remodeling plans, and architectural drafting.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "gonecoastal": {
+    title: "Gone Coastal Beach Rentals",
+    url: "http://gonecoastalbeachrentals.com",
+    industry: "Vacation Property Rentals",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Luxury beachfront vacation home rentals, coastal resort bookings, and property management.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "fitexc": {
+    title: "FitExc Performance",
+    url: "http://fitexc.com",
+    industry: "Fitness & Athletic Training",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Personalized fitness coaching, athletic conditioning, body transformation, and nutrition.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "eastcoastjeeps": {
+    title: "East Coast Jeeps UK",
+    url: "http://eastcoastjeepsuk.com",
+    industry: "Automotive Parts & Accessories",
+    location: "UK",
+    market: "International SEO (UK)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Jeep restoration, 4x4 off-road parts, custom modification, and UK vehicle accessories.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "brevardfootdoc": {
+    title: "Brevard Foot Doctor",
+    url: "http://www.brevardfootdoctor.com",
+    industry: "Podiatry & Foot Surgery",
+    location: "Florida, USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Specialist podiatry clinic for bunion care, diabetic foot management, and heel pain surgery.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "brevardfootclinic": {
+    title: "Brevard Foot Clinic",
+    url: "http://www.brevardfootclinic.com",
+    industry: "Podiatric Medical Center",
+    location: "Florida, USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Comprehensive foot and ankle care clinic providing laser therapy and podiatric rehab.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "aodesigntool": {
+    title: "AO Design Tool",
+    url: "http://aodesigntool.com",
+    industry: "Web Design & Software Utilities",
+    location: "Global",
+    market: "International SEO (Global)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Interactive digital design tools, web utilities, and automated layout generators.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "ambassadorfacility": {
+    title: "Ambassador Facility Services",
+    url: "http://www.ambassadorfacilityservices.com",
+    industry: "Facility Management",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Commercial building maintenance, custodial services, floor care, and property upkeep.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
+  },
+  "aguadrone": {
+    title: "AguaDrone",
+    url: "http://www.aguadrone.com",
+    industry: "Marine Drone Technology",
+    location: "USA",
+    market: "International SEO (USA)",
+    focus: "Technical SEO | On-Page Optimization | Search Intent | Keyword Architecture",
+    summary: "Waterproof drone technology engineered for marine research, fishing, and sonar imaging.",
+    activities: [
+      "Targeted industry keyword research & clustering",
+      "Technical website indexing & Core Web Vitals audit",
+      "On-page metadata & structured Schema deployment",
+      "Local search visibility & search-intent mapping"
+    ],
+    approach: "Delivered data-driven SEO strategy, technical audit fixes, high-intent keyword alignment, and organic search ranking growth.",
+    tools: ["Google Search Console", "GA4", "Ahrefs", "Screaming Frog"]
   }
 };
 
@@ -766,3 +1549,6 @@ function setCurrentYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
+
+
