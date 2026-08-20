@@ -954,7 +954,10 @@ function initContactForm() {
 
     try {
       const formData = new FormData(form);
-      const response = await fetch(form.action, {
+      const website = form.querySelector('[name="website"]')?.value.trim() || 'N/A';
+      const service = form.querySelector('[name="service"]')?.value || 'General Inquiry';
+
+      const response = await fetch('https://formsubmit.co/ajax/zulfiqarumar05@gmail.com', {
         method: 'POST',
         body: formData,
         headers: {
@@ -964,18 +967,31 @@ function initContactForm() {
 
       if (response.ok) {
         if (statusDiv) {
-          statusDiv.className = 'block text-center p-3.5 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-lg';
-          statusDiv.innerHTML = '✅ Inquiry Sent Successfully! Umar will get back to you shortly.';
+          statusDiv.className = 'block text-center p-4 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-xl space-y-1';
+          statusDiv.innerHTML = `
+            <div>✅ Inquiry Sent Successfully!</div>
+            <div class="text-[11px] font-normal text-slate-300">Umar has received your details and will get back to <strong>${email}</strong> shortly.</div>
+          `;
         }
         form.reset();
       } else {
-        const data = await response.json();
-        throw new Error(data.error || 'Submission failed');
+        throw new Error('FormSubmit AJAX returned non-200');
       }
     } catch (err) {
-      console.warn('Formspree fetch failed, submitting directly:', err);
-      // Fallback: direct form submission
-      form.submit();
+      console.warn('FormSubmit AJAX failed, opening WhatsApp fallback:', err);
+      
+      const website = form.querySelector('[name="website"]')?.value.trim() || 'N/A';
+      const service = form.querySelector('[name="service"]')?.value || 'General Inquiry';
+
+      // Fallback: Open pre-filled WhatsApp message
+      const waText = encodeURIComponent(`Hi Umar,\n\nName: ${name}\nEmail: ${email}\nWebsite: ${website}\nService: ${service}\nMessage: ${message}`);
+      window.open(`https://wa.me/916393318401?text=${waText}`, '_blank');
+
+      if (statusDiv) {
+        statusDiv.className = 'block text-center p-4 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-xl space-y-1';
+        statusDiv.innerHTML = '<div>✅ Opening WhatsApp to send your inquiry directly to Umar!</div>';
+      }
+      form.reset();
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
