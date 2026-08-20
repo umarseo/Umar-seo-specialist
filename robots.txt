@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umar-seo-specialist.vercel.app/sitemap.xml
