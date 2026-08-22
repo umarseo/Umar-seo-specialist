@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLZ1KWWPNV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VLZ1KWWPNV');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website Development Services | Umar Zulfqar</title>
+  <meta name="description" content="Custom, high-performance portfolio website development by Umar Zulfqar. Mobile-friendly, SEO-optimized personal branding websites for professionals." />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="ns-RGxFyXZJNR4G8797FZoLrDJOxnNqcXa_w4E8XOBQ" />
+  <link rel="canonical" href="https://umar-seo-specialist.vercel.app/portfolio-website/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://umar-seo-specialist.vercel.app/portfolio-website/" />
+  <meta property="og:title" content="Portfolio Website Development Services | Umar Zulfqar" />
+  <meta property="og:description" content="Custom, high-performance portfolio website development by Umar Zulfqar. Mobile-friendly, SEO-optimized personal branding websites for professionals." />
+  <meta property="og:image" content="assets/images/umar-seo-logo.jpg" />
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#070A11',
+            brandCard: '#0F172A',
+            emeraldAccent: '#10B981',
+            cyanAccent: '#06B6D4'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- FAQPage JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need a professional personal portfolio website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A personal portfolio website establishes your digital brand, showcases your best work to potential clients or recruiters, and provides a platform you fully control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my portfolio website be fully mobile-friendly and fast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every portfolio website is built with mobile-first responsive design principles, optimized images, clean CSS/JS, and fast page loading performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is basic On-Page SEO included in portfolio website development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. I include essential On-Page SEO—including customized title tags, meta descriptions, canonical tags, clean URL structure, and Google indexing setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build and launch a portfolio website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most custom portfolio websites are designed, developed, optimized, and ready to launch within 1 to 2 weeks, depending on content availability and special features."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize sections based on my specific career or business needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. The layout, project showcases, skills sections, blog modules, and contact forms can be fully tailored to reflect your unique personal brand."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-[#070A11] text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-900 overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <div class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <header id="navbar" class="glass-nav rounded-2xl px-4 sm:px-6 py-2.5 shadow-2xl border border-slate-700/40 backdrop-blur-2xl transition-all duration-300">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html#home" class="group flex items-center gap-3">
+          <div class="relative w-10 h-10 rounded-xl overflow-hidden border border-emerald-500/40 shadow-lg shadow-emerald-500/20 group-hover:border-emerald-400 transition-all">
+            <img src="assets/images/umar-seo-logo.jpg" alt="Umar Zulfqar" class="w-full h-full object-cover object-top" />
+            <span class="absolute bottom-0.5 right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-slate-900 animate-pulse"></span>
+          </div>
+          <div>
+            <span class="font-heading font-extrabold text-base sm:text-lg text-slate-100 block leading-tight tracking-tight uppercase group-hover:text-emerald-400 transition">UMAR ZULFQAR</span>
+            <span class="text-[11px] text-emerald-400 font-bold tracking-widest uppercase block">SEO SPECIALIST</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-1 bg-slate-900/40 p-1 rounded-xl border border-white/5">
+          <a href="index.html#home" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Home</a>
+          <a href="index.html#about" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">About</a>
+          <a href="index.html#skills" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Skills</a>
+          <a href="index.html#projects" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Work</a>
+          <a href="clients.html" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Clients</a>
+          <a href="blog.html" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Blog</a>
+          <a href="index.html#services" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-bold text-emerald-400 bg-slate-800/80 transition">Services</a>
+          <a href="index.html#contact" class="nav-link px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/60 transition">Contact</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-2.5">
+          <button id="theme-toggle-btn" type="button" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/80 text-slate-300 hover:text-emerald-400 transition">
+            <svg class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <svg class="w-4 h-4 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+          <a href="tel:+916393318401" class="text-xs font-semibold text-slate-300 hover:text-emerald-400 transition flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900/80 border border-slate-800/80">
+            <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span class="hidden xl:inline">+91 6393318401</span>
+          </a>
+          <a href="index.html#contact" class="px-4.5 py-2 rounded-xl text-xs font-bold text-slate-900 bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all shadow-lg shadow-emerald-500/20">
+            Let's Work Together
+          </a>
+        </div>
+
+        <div class="lg:hidden flex items-center space-x-2">
+          <button id="mobile-menu-btn" type="button" aria-label="Open Mobile Menu" class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="pt-36 pb-16 relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-950/80 to-[#070A11]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <div class="cyber-badge mx-auto">PERSONAL BRANDING &amp; WEB BUILD</div>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
+        Professional Portfolio Website Development
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+        Build a stunning, modern, and SEO-friendly personal portfolio website. Ideal for professionals, freelancers, and businesses looking to showcase work and capture leads.
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a href="index.html#contact" class="px-7 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all shadow-lg shadow-emerald-500/20 transform hover:-translate-y-0.5">
+          Build Your Portfolio Website &rarr;
+        </a>
+        <a href="clients.html" class="px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-300 bg-slate-800/80 border border-slate-700/80 hover:text-white hover:bg-slate-700/80 transition">
+          View Client Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE PILLARS GRID -->
+  <section class="py-12 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-white">What I Provide</h2>
+        <p class="text-slate-400 text-sm">Strategic, sustainable, and data-driven solutions tailored for long-term search growth.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              🎨
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white group-hover:text-emerald-400 transition">Personal Branding &amp; UI</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Custom, iOS-style glassmorphic design that showcases your skills, experience, and projects professionally.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              📱
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white group-hover:text-emerald-400 transition">Responsive &amp; Mobile-First</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">100% mobile-friendly layout engineered for fast loading speeds and smooth navigation on all screens.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              🚀
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white group-hover:text-emerald-400 transition">Built-In Basic On-Page SEO</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Clean HTML5 structure, title tags, meta descriptions, canonicals, and Schema markup ready for Google indexing.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              💼
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white group-hover:text-emerald-400 transition">Showcase &amp; Lead Generation</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">Interactive project galleries, client showcases, contact forms, and call-to-action buttons designed for conversion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-STEP DEVELOPMENT PROCESS -->
+  <section class="py-12 relative bg-slate-950/50 border-y border-slate-800/60">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="space-y-6">
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-white">My 5-Step Portfolio Development Process</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          I help clients build a strong online presence through clean code, modern web design, and search-engine-ready architecture.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 pt-2 text-center">
+          <div class="glass-card p-4 rounded-2xl border border-slate-800">
+            <div class="text-emerald-400 font-extrabold text-lg font-heading">01</div>
+            <div class="font-bold text-xs text-white mt-1">Requirements</div>
+            <p class="text-[11px] text-slate-400 mt-1">Understand goals &amp; brand</p>
+          </div>
+          <div class="glass-card p-4 rounded-2xl border border-slate-800">
+            <div class="text-emerald-400 font-extrabold text-lg font-heading">02</div>
+            <div class="font-bold text-xs text-white mt-1">Structure</div>
+            <p class="text-[11px] text-slate-400 mt-1">Plan pages &amp; flow</p>
+          </div>
+          <div class="glass-card p-4 rounded-2xl border border-slate-800">
+            <div class="text-emerald-400 font-extrabold text-lg font-heading">03</div>
+            <div class="font-bold text-xs text-white mt-1">Build</div>
+            <p class="text-[11px] text-slate-400 mt-1">Develop clean code</p>
+          </div>
+          <div class="glass-card p-4 rounded-2xl border border-slate-800">
+            <div class="text-emerald-400 font-extrabold text-lg font-heading">04</div>
+            <div class="font-bold text-xs text-white mt-1">Optimize</div>
+            <p class="text-[11px] text-slate-400 mt-1">Speed &amp; basic SEO</p>
+          </div>
+          <div class="glass-card p-4 rounded-2xl border border-slate-800">
+            <div class="text-emerald-400 font-extrabold text-lg font-heading">05</div>
+            <div class="font-bold text-xs text-white mt-1">Launch</div>
+            <p class="text-[11px] text-slate-400 mt-1">Deploy live online</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIBLE FAQ SECTION -->
+  <section class="py-16 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div class="text-center space-y-3">
+        <div class="cyber-badge mx-auto">FREQUENTLY ASKED QUESTIONS</div>
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-white">Frequently Asked Questions</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Clear answers about my methodology, deliverables, and service expectations.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-2 flex items-start gap-3">
+            <span class="text-emerald-400 font-mono text-sm pt-0.5">Q1.</span>
+            <span>Why do I need a professional personal portfolio website?</span>
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pl-7">A personal portfolio website establishes your digital brand, showcases your best work to potential clients or recruiters, and provides a platform you fully control.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-2 flex items-start gap-3">
+            <span class="text-emerald-400 font-mono text-sm pt-0.5">Q2.</span>
+            <span>Will my portfolio website be fully mobile-friendly and fast?</span>
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pl-7">Yes. Every portfolio website is built with mobile-first responsive design principles, optimized images, clean CSS/JS, and fast page loading performance.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-2 flex items-start gap-3">
+            <span class="text-emerald-400 font-mono text-sm pt-0.5">Q3.</span>
+            <span>Is basic On-Page SEO included in portfolio website development?</span>
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pl-7">Yes. I include essential On-Page SEO—including customized title tags, meta descriptions, canonical tags, clean URL structure, and Google indexing setup.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-2 flex items-start gap-3">
+            <span class="text-emerald-400 font-mono text-sm pt-0.5">Q4.</span>
+            <span>How long does it take to build and launch a portfolio website?</span>
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pl-7">Most custom portfolio websites are designed, developed, optimized, and ready to launch within 1 to 2 weeks, depending on content availability and special features.</p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition">
+          <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-2 flex items-start gap-3">
+            <span class="text-emerald-400 font-mono text-sm pt-0.5">Q5.</span>
+            <span>Can I customize sections based on my specific career or business needs?</span>
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pl-7">Absolutely. The layout, project showcases, skills sections, blog modules, and contact forms can be fully tailored to reflect your unique personal brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED SERVICES SECTION -->
+  <section class="py-12 relative bg-slate-950/60 border-t border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center space-y-2">
+        <h3 class="font-heading font-bold text-xl text-white">Explore Complementary SEO &amp; Web Services</h3>
+        <p class="text-xs text-slate-400">Interconnected strategies for holistic digital search growth.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="on-page-seo.html" class="glass-card rounded-2xl p-5 border border-slate-800 hover:border-emerald-500/40 transition group flex flex-col justify-between space-y-2">
+          <div>
+            <h4 class="font-heading font-bold text-sm text-white group-hover:text-emerald-400 transition">On-Page SEO Services</h4>
+            <p class="text-xs text-slate-400">Optimize page content and keyword search intent.</p>
+          </div>
+          <span class="text-xs text-emerald-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Learn More &rarr;</span>
+        </a>
+        <a href="technical-seo.html" class="glass-card rounded-2xl p-5 border border-slate-800 hover:border-emerald-500/40 transition group flex flex-col justify-between space-y-2">
+          <div>
+            <h4 class="font-heading font-bold text-sm text-white group-hover:text-emerald-400 transition">Technical SEO Audit</h4>
+            <p class="text-xs text-slate-400">Ensure seamless crawling and page speed.</p>
+          </div>
+          <span class="text-xs text-emerald-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Learn More &rarr;</span>
+        </a>
+        <a href="clients.html" class="glass-card rounded-2xl p-5 border border-slate-800 hover:border-emerald-500/40 transition group flex flex-col justify-between space-y-2">
+          <div>
+            <h4 class="font-heading font-bold text-sm text-white group-hover:text-emerald-400 transition">View Client Work</h4>
+            <p class="text-xs text-slate-400">Explore real-world client website projects.</p>
+          </div>
+          <span class="text-xs text-emerald-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Learn More &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-16 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-emerald-500/30 space-y-6 relative">
+        <h2 class="font-heading font-extrabold text-3xl text-white">Get Your Portfolio Website</h2>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
+          Ready to launch a high-impact personal portfolio website? Let's discuss your design preferences and project requirements.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
+          <a href="index.html#contact" class="px-8 py-4 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 transition-all shadow-lg shadow-emerald-500/20">
+            Get Your Portfolio Website &rarr;
+          </a>
+          <a href="tel:+916393318401" class="px-6 py-4 rounded-xl font-semibold text-xs sm:text-sm text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+            Call +91 6393318401
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-slate-800/80 bg-slate-950 text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      <p class="font-heading font-bold text-slate-200 text-sm">UMAR ZULFQAR &mdash; SEO SPECIALIST</p>
+      <p>&copy; 2026 Umar Zulfqar. All rights reserved. Data-driven growth, technical SEO, and web development.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
