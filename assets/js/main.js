@@ -32,19 +32,15 @@ function initThemeToggle() {
   const themeToggleMobile = document.getElementById('theme-toggle-mobile');
   const htmlEl = document.documentElement;
 
-  // Retrieve saved preference or default to dark
+  // Retrieve saved preference or default to light theme
   const savedTheme = localStorage.getItem('portfolio-theme');
-  if (savedTheme === 'light') {
-    htmlEl.classList.remove('dark');
-  } else if (savedTheme === 'dark') {
+  if (savedTheme === 'dark') {
     htmlEl.classList.add('dark');
+  } else if (savedTheme === 'light') {
+    htmlEl.classList.remove('dark');
   } else {
-    // Check system preference if available
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      htmlEl.classList.remove('dark');
-    } else {
-      htmlEl.classList.add('dark');
-    }
+    // Default to clean light theme
+    htmlEl.classList.remove('dark');
   }
 
   const toggleTheme = () => {
